@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="/css/style.css">
+    
+  </head>
+  <body>
+    <!-- ........Header........ -->
+    <header>
+        <div class="heading">
+            <h1>sorting visualizer</h1>
+        </div>
+    </header>
+
+    <!-- ......Message-Section -->
+    <div class="message">
+        <p class="font">Get ready for a sorting algorithm adventure like no other! Step into the world of data manipulation with our interactive sorting algorithm visualization. Watch as numbers come to life, dancing and reordering themselves in the most mesmerizing way possible.</p>
+    </div>
+
+    <!-- ......Sorting-Section...... -->
+    <div class="sorting-section">
+
+        <!-- ......Parameter-Entry-Section...... -->
+        <div class="parameter-section">
+            <div class="arr-size font">
+                <label for="arrSize">Size of Array:</label>
+                <input id="arrSize" type="range" min="5" max="80" step="1" value="20">
+            </div>
+            <div class="algo-speed font">
+                <label for="algoSpeed">Algorithm Speed:</label>
+                <input id="algoSpeed" type="range" min="1" max="4" step="1" value="2">
+            </div>
+            <!-- ......New-Array-Genaration-Button -->
+            <div>
+                <button id="genarateArr" class="btn font">Generate New Array</button>
+            </div>
+            <!-- ......Select-Algorithm...... -->
+            <div class="font">
+                <label for="algoSelect">Select Algorithm:</label>
+                <select id="algoSelect" class="select-algo font">
+                    <option value="Bubble Sort">Bubble Sort</option>
+                    <option value="Selection Sort">Selection Sort</option>
+                    <option value="Insertion Sort">Insertion Sort</option>
+                    <option value="Merge Sort">Merge Sort</option>
+                    <option value="Quick Sort">Quick Sort</option>
+                    <option value="Heap Sort">Heap Sort</option>
+                </select>
+            </div>
+            <div>
+                <button id="sortBtn" class="btn font" style="width: 115px;">Sort it Out!</button>
+            </div>
+        </div>
+
+        <!-- ......Visualization-Section...... -->
+        <div class="array-visual">
+            <div id="arrayContainer" class="array-box"></div>
+        </div>
+
+        <!-- ......Algoritm-Information-Section...... -->
+        <div class="info-algo">
+            <div id="algoInfo"></div>
+        </div>
+    </div>
+    <div class="message">
+        <p class="font">
+            Enjoyed..!
+        </div>
+
+    <!-- ........Footer........ -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-panel-1">
+                <div class="contact-detail">
+                    <h2>Contact Us:</h2>
+                    <br>
+                    <div class="contact-box">
+                        <div class="profile-pic"></div>
+                        <div class="foot-text">
+                            Vikas<br>
+                            IIT(ISM) Dhanbad
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                        <img src="/images/gmail_logo.png" alt="Gmail_logo" style="width:30px;">
+                        <div class="foot-text">xyz@gmail.com</div>
+                    </div>
+                    <div class="contact-box">
+                        <img src="/images/LinkedIn_logo.webp" alt="LinkedIn_logo" style="width:30px;">
+                        <div class="foot-text">
+                            <a style="padding-left: 0px; text-decoration: none; color: rgb(173, 181, 182);" href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BUahaT4cBSjuNQM5B4lhADg%3D%3D" target="_main">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-detail">
+                    <h2>Reference:</h2>
+                    <br>                    
+                    <div class="contact-box">
+                        <img src="/images/github_logo.png" alt="GitHub_logo" style="width:30px; background-color: white;">
+                        <div class="foot-text">
+                            <a style="padding-left: 0px; text-decoration: none; color: rgb(173, 181, 182);" href="" target="_main">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ....Feedback box --- to be added.... -->
+                <div class="feedback-box">
+                    <h2>Feedback:</h2>
+                    <br>                    
+                    <div>
+                        <input type="text" placeholder=" Enter your feedback here...">
+                        <button style="border: 2px solid black; border-radius: 5px; font-weight: 700;">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-panel-2">
+                Thankyou for visiting us...!
+            </div>
+
+        </div>
+    </footer>
+    
+    <!-- ...... JS files ...... -->
+    <script src="/scripts/main.js"></script>
+    <script src="/scripts/visualization.js"></script>
+
+    <script src="/scripts/bubble_sort.js"></script>
+    <script src="/scripts/selection_sort.js"></script>
+    <script src="/scripts/insertion_sort.js"></script>
+    <script src="/scripts/merge_sort.js"></script>
+    <script src="/scripts/quick_sort.js"></script>
+    <script src="/scripts/heap_sort.js"></script>
+    
+
+  </body>
+</html>
